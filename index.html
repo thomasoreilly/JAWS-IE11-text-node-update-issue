@@ -1,0 +1,10 @@
+<button onclick="updateText()">click me</button>
+<div aria-live="polite"><p id="demo"></p></div>
+<script>
+var textNode = document.createTextNode('');
+document.getElementById('demo').appendChild(textNode);
+function updateText(){
+    var textNode = document.createTextNode('Hello World!');
+    document.getElementById('demo').childNodes[0].nodeValue = 'Hello World!';
+}
+</script>
